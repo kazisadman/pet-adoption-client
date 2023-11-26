@@ -1,0 +1,22 @@
+[
+  {
+    "category_name": "cat",
+    "image": "https://i.ibb.co/gw6r17z/cat.jpg",
+    "description": "A charming feline friend, ready to bring warmth and playfulness into your home."
+  },
+  {
+    "category_name": "dog",
+    "image": "https://i.ibb.co/HzF97kg/dog.jpg",
+    "description": "An affectionate canine companion, eager to share love and joyful moments with you."
+  },
+  {
+    "category_name": "rabbit",
+    "image": "https://i.ibb.co/fCFc9NM/rabbit.jpg",
+    "description": "A gentle and curious rabbit, with fluffy fur and a lovable personality, awaiting a cozy home."
+  },
+  {
+    "category_name": "fish",
+    "image": "https://i.ibb.co/N1rjq8g/fish.jpg",
+    "description": "A colorful aquatic friend, adding vibrancy and tranquility to your home aquarium."
+  }
+]
