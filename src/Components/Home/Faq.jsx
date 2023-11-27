@@ -6,12 +6,12 @@ const Faq = () => {
   return (
     <div>
       <Heading heading={"questions"} subHeading={"frequently asked"}></Heading>
-      <div className="flex flex-col md:flex-row justify-between items-center gap-6 my-10">
+      <div className="flex flex-col lg:flex-row justify-between items-end gap-6 my-10">
         <div>
           <img src={faqimage} alt="" />
         </div>
-        <div className="flex-1 mt-7">
-          <Accordion collapseAll>
+        <div className="flex-1">
+          <Accordion >
             <Accordion.Panel>
               <Accordion.Title>
                 Q: How does the pet adoption process work?

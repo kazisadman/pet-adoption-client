@@ -2,7 +2,7 @@ import image from "../../assets/image/banner-image.png";
 
 const Banner = () => {
   return (
-    <div className="flex flex-col md:flex-row justify-center items-center bg-[#FFB400] text-white">
+    <div className="flex flex-col lg:flex-row py-4 justify-center items-center bg-[#FFB400] text-white">
       <div className="max-w-md">
         <h1 className="text-5xl mb-10 font-semibold">Find Your Furry Friend</h1>
         <p>
