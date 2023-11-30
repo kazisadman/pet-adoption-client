@@ -1,0 +1,130 @@
+[
+  {
+    "_id": "1",
+    "image": "cat1.jpg",
+    "name": "Whiskers",
+    "age": 2,
+    "location": "New York, USA",
+    "category": "cat"
+  },
+  {
+    "_id": "2",
+    "image": "cat2.jpg",
+    "name": "Mittens",
+    "age": 3,
+    "location": "Los Angeles, USA",
+    "category": "cat"
+  },
+  {
+    "_id": "3",
+    "image": "cat3.jpg",
+    "name": "Shadow",
+    "age": 1,
+    "location": "Chicago, USA",
+    "category": "cat"
+  },
+  {
+    "_id": "4",
+    "image": "cat4.jpg",
+    "name": "Luna",
+    "age": 4,
+    "location": "Miami, USA",
+    "category": "cat"
+  },
+  {
+    "_id": "5",
+    "image": "dog1.jpg",
+    "name": "Buddy",
+    "age": 2,
+    "location": "San Francisco, USA",
+    "category": "dog"
+  },
+  {
+    "_id": "6",
+    "image": "dog2.jpg",
+    "name": "Charlie",
+    "age": 5,
+    "location": "Seattle, USA",
+    "category": "dog"
+  },
+  {
+    "_id": "7",
+    "image": "dog3.jpg",
+    "name": "Max",
+    "age": 3,
+    "location": "Austin, USA",
+    "category": "dog"
+  },
+  {
+    "_id": "8",
+    "image": "dog4.jpg",
+    "name": "Daisy",
+    "age": 1,
+    "location": "Denver, USA",
+    "category": "dog"
+  },
+  {
+    "_id": "9",
+    "image": "rabbit1.jpg",
+    "name": "Cotton",
+    "age": 1,
+    "location": "Portland, USA",
+    "category": "rabbit"
+  },
+  {
+    "_id": "10",
+    "image": "rabbit2.jpg",
+    "name": "Thumper",
+    "age": 2,
+    "location": "Boston, USA",
+    "category": "rabbit"
+  },
+  {
+    "_id": "11",
+    "image": "rabbit3.jpg",
+    "name": "Snowball",
+    "age": 1,
+    "location": "Atlanta, USA",
+    "category": "rabbit"
+  },
+  {
+    "_id": "12",
+    "image": "rabbit4.jpg",
+    "name": "Bunny",
+    "age": 3,
+    "location": "Dallas, USA",
+    "category": "rabbit"
+  },
+  {
+    "_id": "13",
+    "image": "fish1.jpg",
+    "name": "Finny",
+    "age": 1,
+    "location": "Houston, USA",
+    "category": "fish"
+  },
+  {
+    "_id": "14",
+    "image": "fish2.jpg",
+    "name": "Bubbles",
+    "age": 2,
+    "location": "Phoenix, USA",
+    "category": "fish"
+  },
+  {
+    "_id": "15",
+    "image": "fish3.jpg",
+    "name": "Splash",
+    "age": 1,
+    "location": "Las Vegas, USA",
+    "category": "fish"
+  },
+  {
+    "_id": "16",
+    "image": "fish4.jpg",
+    "name": "Finnegan",
+    "age": 3,
+    "location": "Orlando, USA",
+    "category": "fish"
+  }
+]
