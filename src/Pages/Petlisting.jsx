@@ -12,7 +12,6 @@ const Petlisting = () => {
 
   return (
     <div>
-      <h1>pet listing</h1>
       <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-6 my-6">
         {petsInfo.map((petInfo) => (
           <Petinfocard key={petInfo._id} petInfo={petInfo}></Petinfocard>

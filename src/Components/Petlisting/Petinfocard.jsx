@@ -2,9 +2,10 @@ import PropTypes from "prop-types";
 import { Card, Button } from "flowbite-react";
 import { FaLocationDot } from "react-icons/fa6";
 import { MdPets } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 const Petinfocard = ({ petInfo }) => {
-  const { image, name, age, location } = petInfo;
+  const { _id, image, name, age, location } = petInfo;
 
   return (
     <div>
@@ -26,7 +27,9 @@ const Petinfocard = ({ petInfo }) => {
             <h2 className="text-2xl">{age} years</h2>
           </div>
         </div>
-        <Button color="warning">Details</Button>
+        <Link to={`/pet-details/${_id}`}>
+          <Button color="warning">Details</Button>
+        </Link>
       </Card>
     </div>
   );
