@@ -1,8 +1,12 @@
 import { Avatar, Dropdown, Navbar } from "flowbite-react";
 import Logo from "../assets/image/Logo.png";
 import { NavLink } from "react-router-dom";
+import { useContext } from "react";
+import { AuthContext } from "../context/Authprovider";
 
 const Nav = () => {
+  const { user, logOut } = useContext(AuthContext);
+
   const links = (
     <>
       <NavLink to={"/"}>
@@ -14,9 +18,11 @@ const Nav = () => {
       <NavLink to={"/donation-campaigns"}>
         <Navbar.Link>Donation Campaigns</Navbar.Link>
       </NavLink>
-      <NavLink to={"/login"}>
-        <Navbar.Link>Login/Register</Navbar.Link>
-      </NavLink>
+      {!user && (
+        <NavLink to={"/login"}>
+          <Navbar.Link>Login/Register</Navbar.Link>
+        </NavLink>
+      )}
     </>
   );
   return (
@@ -36,25 +42,19 @@ const Nav = () => {
           <Dropdown
             arrowIcon={false}
             inline
-            label={
-              <Avatar
-                alt="User settings"
-                img="https://flowbite.com/docs/images/people/profile-picture-5.jpg"
-                rounded
-              />
-            }
+            label={<Avatar alt="User settings" img={user?.photoURL} rounded />}
           >
             <Dropdown.Header>
-              <span className="block text-sm">Bonnie Green</span>
+              <span className="block text-sm">{user?.displayName}</span>
               <span className="block truncate text-sm font-medium">
-                name@flowbite.com
+                {user?.email}
               </span>
             </Dropdown.Header>
-            <NavLink to={"/dashboard"}>
+            <NavLink to={"/dashboard/add-pet"}>
               <Dropdown.Item>Dashboard</Dropdown.Item>
             </NavLink>
             <Dropdown.Divider />
-            <Dropdown.Item>Sign out</Dropdown.Item>
+            <Dropdown.Item onClick={logOut}>Sign out</Dropdown.Item>
           </Dropdown>
           <Navbar.Toggle />
         </div>

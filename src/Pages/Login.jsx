@@ -1,10 +1,12 @@
 import { Button, Label, TextInput } from "flowbite-react";
 import { useContext } from "react";
 import { AuthContext } from "../context/Authprovider";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { FaGoogle } from "react-icons/fa6";
 
 const Login = () => {
-  const { signIn } = useContext(AuthContext);
+  const { signIn, userGoogle } = useContext(AuthContext);
+  const nav = useNavigate();
 
   const handleLogin = (e) => {
     e.preventDefault();
@@ -16,6 +18,15 @@ const Login = () => {
       const user = result.user;
       console.log(user);
     });
+  };
+
+  const handleGoogleLogin = () => {
+    userGoogle()
+      .then((result) => {
+        console.log(result);
+        nav("/");
+      })
+      .catch((error) => console.log(error));
   };
   return (
     <div className="flex justify-center items-center w-full">
@@ -45,9 +56,14 @@ const Login = () => {
             />
           </div>
           <Button type="submit">Submit</Button>
+          <div className="flex justify-center items-center">
+            <button onClick={handleGoogleLogin}>
+              <FaGoogle></FaGoogle>
+            </button>
+          </div>
           <p>
             <small>
-              Don&aps;t have an account?
+              Don&apos;t have an account?
               <Link to="/registration">Registration</Link>
             </small>
           </p>

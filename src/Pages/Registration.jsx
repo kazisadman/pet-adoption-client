@@ -1,11 +1,16 @@
 import { Button, Label, TextInput } from "flowbite-react";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { AuthContext } from "../context/Authprovider";
+import { Link, useNavigate } from "react-router-dom";
 
 const Registration = () => {
   const { createUser, updateUserProfile } = useContext(AuthContext);
+  const [error, setError] = useState(null);
+  const nav = useNavigate();
 
   const handleRegistration = (e) => {
+    setError("");
+
     e.preventDefault();
     const form = e.target;
     const name = form.name.value;
@@ -14,24 +19,33 @@ const Registration = () => {
     const password = form.password.value;
     console.log(email, password);
 
-    createUser(email, password)
-      .then((res) => {
-        console.log(res.user);
+    if (password.length < 6) {
+      setError("Password should be atleast 6 characters");
+    } else if (!/[A-Z]/.test(password)) {
+      setError("Password should have atleast 1 capital letter");
+    } else if (!/[!@#$%^&*(),.?":{}|<>]/.test(password)) {
+      setError("Password should have atleast 1 special character");
+    } else {
+      createUser(email, password)
+        .then((res) => {
+          console.log(res.user);
 
-        updateUserProfile(name, image)
-          .then(() => {
-            console.log("updated");
-          })
-          .catch((err) => console.error(err));
-      })
-      .catch((err) => console.error(err));
+          updateUserProfile(name, image)
+            .then(() => {
+              console.log("updated");
+              nav("/home");
+            })
+            .catch((err) => console.error(err));
+        })
+        .catch((err) => console.error(err));
+    }
   };
 
   return (
     <div className="flex justify-center items-center">
       <div>
         <form
-          className="flex max-w-md flex-col gap-4"
+          className="flex w-96 flex-col gap-4"
           onSubmit={handleRegistration}
         >
           <div>
@@ -73,6 +87,13 @@ const Registration = () => {
             />
           </div>
           <Button type="submit">Register</Button>
+          <p>
+            <small>
+              Have an account?
+              <Link to="/login">Login</Link>
+            </small>
+          </p>
+          {error && <h2>{error}</h2>}
         </form>
       </div>
     </div>

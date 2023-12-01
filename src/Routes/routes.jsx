@@ -6,6 +6,7 @@ import Petdetails from "../Pages/Petdetails";
 import Donations from "../Pages/Donations";
 import Login from "../Pages/Login";
 import Registration from "../Pages/Registration";
+import Dashboard from "../Pages/Dashboard/Dashboard";
 
 export const router = createBrowserRouter([
   {
@@ -37,6 +38,13 @@ export const router = createBrowserRouter([
       {
         path: "/registration",
         element: <Registration></Registration>,
+      },
+
+      // dashboard
+
+      {
+        path: "/dashboard/add-pet",
+        element: <Dashboard></Dashboard>,
       },
     ],
   },
