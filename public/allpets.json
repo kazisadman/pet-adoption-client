@@ -1,162 +1,162 @@
 [
   {
-    "_id": "1",
     "image": "cat1.jpg",
     "name": "Whiskers",
     "age": 2,
     "location": "New York, USA",
     "category": "cat",
     "maximum_Donation_Amount": 100,
-    "donated_Amount": 50
+    "donated_Amount": 50,
+    "adopted": "false"
   },
   {
-    "_id": "2",
     "image": "cat2.jpg",
     "name": "Mittens",
     "age": 3,
     "location": "Los Angeles, USA",
     "category": "cat",
     "maximum_Donation_Amount": 120,
-    "donated_Amount": 80
+    "donated_Amount": 80,
+    "adopted": "false"
   },
   {
-    "_id": "3",
     "image": "cat3.jpg",
     "name": "Shadow",
     "age": 1,
     "location": "Chicago, USA",
     "category": "cat",
     "maximum_Donation_Amount": 80,
-    "donated_Amount": 30
+    "donated_Amount": 30,
+    "adopted": "false"
   },
   {
-    "_id": "4",
     "image": "cat4.jpg",
     "name": "Luna",
     "age": 4,
     "location": "Miami, USA",
     "category": "cat",
     "maximum_Donation_Amount": 150,
-    "donated_Amount": 100
+    "donated_Amount": 100,
+    "adopted": "false"
   },
   {
-    "_id": "5",
     "image": "dog1.jpg",
     "name": "Buddy",
     "age": 2,
     "location": "San Francisco, USA",
     "category": "dog",
     "maximum_Donation_Amount": 200,
-    "donated_Amount": 120
+    "donated_Amount": 120,
+    "adopted": "false"
   },
   {
-    "_id": "6",
     "image": "dog2.jpg",
     "name": "Charlie",
     "age": 5,
     "location": "Seattle, USA",
     "category": "dog",
     "maximum_Donation_Amount": 180,
-    "donated_Amount": 90
+    "donated_Amount": 90,
+    "adopted": "false"
   },
   {
-    "_id": "7",
     "image": "dog3.jpg",
     "name": "Max",
     "age": 3,
     "location": "Austin, USA",
     "category": "dog",
     "maximum_Donation_Amount": 160,
-    "donated_Amount": 70
+    "donated_Amount": 70,
+    "adopted": "false"
   },
   {
-    "_id": "8",
     "image": "dog4.jpg",
     "name": "Daisy",
     "age": 1,
     "location": "Denver, USA",
     "category": "dog",
     "maximum_Donation_Amount": 120,
-    "donated_Amount": 50
+    "donated_Amount": 50,
+    "adopted": "false"
   },
   {
-    "_id": "9",
     "image": "rabbit1.jpg",
     "name": "Cotton",
     "age": 1,
     "location": "Portland, USA",
     "category": "rabbit",
     "maximum_Donation_Amount": 80,
-    "donated_Amount": 30
+    "donated_Amount": 30,
+    "adopted": "false"
   },
   {
-    "_id": "10",
     "image": "rabbit2.jpg",
     "name": "Thumper",
     "age": 2,
     "location": "Boston, USA",
     "category": "rabbit",
     "maximum_Donation_Amount": 100,
-    "donated_Amount": 40
+    "donated_Amount": 40,
+    "adopted": "false"
   },
   {
-    "_id": "11",
     "image": "rabbit3.jpg",
     "name": "Snowball",
     "age": 1,
     "location": "Atlanta, USA",
     "category": "rabbit",
     "maximum_Donation_Amount": 70,
-    "donated_Amount": 20
+    "donated_Amount": 20,
+    "adopted": "false"
   },
   {
-    "_id": "12",
     "image": "rabbit4.jpg",
     "name": "Bunny",
     "age": 3,
     "location": "Dallas, USA",
     "category": "rabbit",
     "maximum_Donation_Amount": 120,
-    "donated_Amount": 60
+    "donated_Amount": 60,
+    "adopted": "false"
   },
   {
-    "_id": "13",
     "image": "fish1.jpg",
     "name": "Finny",
     "age": 1,
     "location": "Houston, USA",
     "category": "fish",
     "maximum_Donation_Amount": 50,
-    "donated_Amount": 20
+    "donated_Amount": 20,
+    "adopted": "false"
   },
   {
-    "_id": "14",
     "image": "fish2.jpg",
     "name": "Bubbles",
     "age": 2,
     "location": "Phoenix, USA",
     "category": "fish",
     "maximum_Donation_Amount": 80,
-    "donated_Amount": 40
+    "donated_Amount": 40,
+    "adopted": "false"
   },
   {
-    "_id": "15",
     "image": "fish3.jpg",
     "name": "Splash",
     "age": 1,
     "location": "Las Vegas, USA",
     "category": "fish",
     "maximum_Donation_Amount": 30,
-    "donated_Amount": 10
+    "donated_Amount": 10,
+    "adopted": "false"
   },
   {
-    "_id": "16",
     "image": "fish4.jpg",
     "name": "Finnegan",
     "age": 3,
     "location": "Orlando, USA",
     "category": "fish",
     "maximum_Donation_Amount": 60,
-    "donated_Amount": 30
+    "donated_Amount": 30,
+    "adopted": "false"
   }
 ]

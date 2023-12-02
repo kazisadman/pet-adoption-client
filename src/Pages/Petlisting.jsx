@@ -5,7 +5,7 @@ const Petlisting = () => {
   const [petsInfo, setPetsInfo] = useState([]);
 
   useEffect(() => {
-    fetch("allpets.json")
+    fetch("http://localhost:5000/pets")
       .then((res) => res.json())
       .then((data) => setPetsInfo(data));
   }, []);

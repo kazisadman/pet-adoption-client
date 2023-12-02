@@ -2,11 +2,13 @@ import { Button, Label, TextInput } from "flowbite-react";
 import { useContext, useState } from "react";
 import { AuthContext } from "../context/Authprovider";
 import { Link, useNavigate } from "react-router-dom";
+import useAxiosPublic from "../Hooks/useAxiosPublic";
 
 const Registration = () => {
   const { createUser, updateUserProfile } = useContext(AuthContext);
   const [error, setError] = useState(null);
   const nav = useNavigate();
+  const axiosPublic = useAxiosPublic();
 
   const handleRegistration = (e) => {
     setError("");
@@ -17,6 +19,7 @@ const Registration = () => {
     const image = form.image.value;
     const email = form.email.value;
     const password = form.password.value;
+    const role = "user";
     console.log(email, password);
 
     if (password.length < 6) {
@@ -33,7 +36,19 @@ const Registration = () => {
           updateUserProfile(name, image)
             .then(() => {
               console.log("updated");
-              nav("/home");
+
+              const user = {
+                name: name,
+                email: email,
+                image: image,
+                role: role,
+              };
+
+              axiosPublic
+                .post("/users", user)
+                .then((res) => console.log(res))
+                .catch((err) => console.log(err));
+              nav("/");
             })
             .catch((err) => console.error(err));
         })

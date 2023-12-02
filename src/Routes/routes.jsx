@@ -8,6 +8,8 @@ import Login from "../Pages/Login";
 import Registration from "../Pages/Registration";
 import Dashboard from "../Pages/Dashboard/Dashboard";
 import Addpet from "../Pages/Dashboard/Addpet";
+import Allusers from "../Pages/Dashboard/Admin/Allusers";
+import Allpets from "../Pages/Dashboard/Admin/Allpets";
 
 export const router = createBrowserRouter([
   {
@@ -25,12 +27,12 @@ export const router = createBrowserRouter([
       {
         path: "/pet-details/:id",
         element: <Petdetails></Petdetails>,
-        loader: () => fetch("/allpets.json"),
+        loader: () => fetch("http://localhost:5000/pets"),
       },
       {
         path: "/donation-campaigns",
         element: <Donations></Donations>,
-        loader: () => fetch("/allpets.json"),
+        loader: () => fetch("http://localhost:5000/pets"),
       },
       {
         path: "/login",
@@ -51,6 +53,15 @@ export const router = createBrowserRouter([
       {
         path: "add-pet",
         element: <Addpet></Addpet>,
+      },
+      {
+        path: "all-users",
+        element: <Allusers></Allusers>,
+      },
+      {
+        path: "all-pets",
+        element: <Allpets></Allpets>,
+        loader: () => fetch("http://localhost:5000/pets"),
       },
     ],
   },
