@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const axiosInstancePublic = axios.create({
-  baseURL: "http://localhost:5000",
+  baseURL: "https://y-nine-sigma.vercel.app",
 });
 const useAxiosPublic = () => {
   return axiosInstancePublic;

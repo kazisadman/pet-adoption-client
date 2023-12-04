@@ -2,6 +2,7 @@ import { useState } from "react";
 import Heading from "../Heading";
 import { useEffect } from "react";
 import { Card, Button } from "flowbite-react";
+import { Link } from "react-router-dom";
 
 const Categories = () => {
   const [categories, setCategories] = useState([]);
@@ -28,7 +29,9 @@ const Categories = () => {
               <p className="font-normal text-gray-700 dark:text-gray-400">
                 {category.description}
               </p>
-              <Button color="warning">Show Me!</Button>
+              <Link to={"/pet-listing"}>
+                <Button color="warning">Show Me!</Button>
+              </Link>
             </Card>
           </>
         ))}

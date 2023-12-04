@@ -20,7 +20,6 @@ const Registration = () => {
     const email = form.email.value;
     const password = form.password.value;
     const role = "user";
-    console.log(email, password);
 
     if (password.length < 6) {
       setError("Password should be atleast 6 characters");

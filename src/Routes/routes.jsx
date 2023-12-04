@@ -10,11 +10,15 @@ import Dashboard from "../Pages/Dashboard/Dashboard";
 import Addpet from "../Pages/Dashboard/Addpet";
 import Allusers from "../Pages/Dashboard/Admin/Allusers";
 import Allpets from "../Pages/Dashboard/Admin/Allpets";
+import Error from "../Pages/Error";
+import Mypets from "../Pages/Dashboard/Mypets";
+import Updatepet from "../Pages/Dashboard/Updatepet";
 
 export const router = createBrowserRouter([
   {
     path: "/",
     element: <Main></Main>,
+    errorElement: <Error></Error>,
     children: [
       {
         path: "/",
@@ -27,12 +31,12 @@ export const router = createBrowserRouter([
       {
         path: "/pet-details/:id",
         element: <Petdetails></Petdetails>,
-        loader: () => fetch("http://localhost:5000/pets"),
+        loader: () => fetch("https://y-nine-sigma.vercel.app/pets"),
       },
       {
         path: "/donation-campaigns",
         element: <Donations></Donations>,
-        loader: () => fetch("http://localhost:5000/pets"),
+        loader: () => fetch("https://y-nine-sigma.vercel.app/pets"),
       },
       {
         path: "/login",
@@ -47,8 +51,10 @@ export const router = createBrowserRouter([
   // dashboard
 
   {
-    path: "/dashboard",
+    path: "/dashboard/:email/",
     element: <Dashboard></Dashboard>,
+    loader: () => fetch("https://y-nine-sigma.vercel.app/users"),
+    errorElement: <Error></Error>,
     children: [
       {
         path: "add-pet",
@@ -61,7 +67,17 @@ export const router = createBrowserRouter([
       {
         path: "all-pets",
         element: <Allpets></Allpets>,
-        loader: () => fetch("http://localhost:5000/pets"),
+        loader: () => fetch("https://y-nine-sigma.vercel.app/pets"),
+      },
+      {
+        path: "added-pets",
+        element: <Mypets></Mypets>,
+        loader: () => fetch("https://y-nine-sigma.vercel.app/pets"),
+      },
+      {
+        path: "update-pet",
+        element: <Updatepet></Updatepet>,
+        loader: () => fetch("https://y-nine-sigma.vercel.app/pets"),
       },
     ],
   },

@@ -9,7 +9,7 @@ const Allusers = () => {
   const axiosPublic = useAxiosPublic();
 
   useEffect(() => {
-    fetch("http://localhost:5000/users")
+    fetch("https://y-nine-sigma.vercel.app/users")
       .then((res) => res.json())
       .then((data) => setusersInfo(data));
   }, []);

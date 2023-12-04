@@ -1,5 +1,5 @@
 import { Sidebar } from "flowbite-react";
-import { Link } from "react-router-dom";
+import { Link, useLoaderData, useParams } from "react-router-dom";
 import { PiDogFill } from "react-icons/pi";
 import { FaListUl } from "react-icons/fa";
 import { VscRequestChanges } from "react-icons/vsc";
@@ -7,13 +7,28 @@ import { FaDollarSign, FaHandHoldingDollar, FaUsers } from "react-icons/fa6";
 import { MdCampaign } from "react-icons/md";
 import { Outlet } from "react-router-dom";
 import Nav from "../../Shared/Nav";
+import { useEffect, useState } from "react";
 
 const Dashboard = () => {
-  const isAdmin = true;
+  const { email } = useParams();
+  const usersInfo = useLoaderData();
+  const [admin, setAdmin] = useState("");
+
+  useEffect(() => {
+    const isAdmin = usersInfo.find(
+      (userInfo) => userInfo.email === email && userInfo.role === "admin"
+    );
+    if (isAdmin) {
+      setAdmin(true);
+    } else {
+      setAdmin(false);
+    }
+  }, [email, usersInfo]);
+
   return (
     <div className="max-w-7xl mx-auto">
       <Nav></Nav>
-      {isAdmin ? (
+      {admin ? (
         <div className="flex flex-col md:flex-row ">
           <div>
             <Sidebar aria-label="Sidebar with content separator example">

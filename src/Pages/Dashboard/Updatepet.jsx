@@ -6,57 +6,10 @@ import {
   Button,
   FileInput,
 } from "flowbite-react";
-import useAxiosPublic from "../../Hooks/useAxiosPublic";
-import { useParams } from "react-router-dom";
+// import useAxiosPublic from "../../Hooks/useAxiosPublic";
+// import { useParams } from "react-router-dom";
 
-const Addpet = () => {
-  const image_hosting_api = `https://api.imgbb.com/1/upload?key=bef2b385acbd17663810b2defa77390e`;
-
-  const axiosPublic = useAxiosPublic();
-
-  const { email } = useParams();
-
-  const handleAddPet = (e) => {
-    e.preventDefault();
-    const form = e.target;
-    const name = form.name.value;
-    const age = parseInt(form.age.value);
-    const category = form.category.value;
-    const image = form.image.files[0];
-    const location = form.location.value;
-    const short_description = form.short_description.value;
-    const long_description = form.long_description.value;
-    const adopted = "false";
-
-    const imageFile = { image: image };
-
-    axiosPublic
-      .post(image_hosting_api, imageFile, {
-        headers: {
-          "Content-Type": "multipart/form-data",
-        },
-      })
-      .then((res) => {
-        console.log(res);
-        const petData = {
-          name,
-          age,
-          category,
-          location,
-          short_description,
-          long_description,
-          image: res.data.data.display_url,
-          adopted,
-          email: email,
-        };
-
-        axiosPublic
-          .post("/pets", petData)
-          .then((res) => console.log(res))
-          .catch((err) => console.log(err));
-      });
-  };
-
+const Updatepet = () => {
   return (
     <div>
       <div>
@@ -65,7 +18,7 @@ const Addpet = () => {
             Add a new Pet
           </h1>
         </div>
-        <form onSubmit={handleAddPet}>
+        <form>
           <div className="flex flex-col lg:flex-row justify-between gap-5">
             <div className="w-96">
               <div className="mb-2 block">
@@ -138,4 +91,4 @@ const Addpet = () => {
   );
 };
 
-export default Addpet;
+export default Updatepet;

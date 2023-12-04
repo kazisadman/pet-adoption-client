@@ -50,7 +50,7 @@ const Nav = () => {
                 {user?.email}
               </span>
             </Dropdown.Header>
-            <NavLink to={"/dashboard"}>
+            <NavLink to={`/dashboard/${user?.email}`}>
               <Dropdown.Item>Dashboard</Dropdown.Item>
             </NavLink>
             <Dropdown.Divider />

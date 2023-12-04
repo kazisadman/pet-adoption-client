@@ -1,6 +1,6 @@
 [
   {
-    "image": "cat1.jpg",
+    "image": "https://i.ibb.co/Bch02PD/kitten-4611189-640.jpg",
     "name": "Whiskers",
     "age": 2,
     "location": "New York, USA",
@@ -10,7 +10,7 @@
     "adopted": "false"
   },
   {
-    "image": "cat2.jpg",
+    "image": "https://i.ibb.co/DW0yYG3/kitty-2948404-640.jpg",
     "name": "Mittens",
     "age": 3,
     "location": "Los Angeles, USA",
@@ -20,7 +20,7 @@
     "adopted": "false"
   },
   {
-    "image": "cat3.jpg",
+    "image": "https://i.ibb.co/5Kgc6zt/maine-coon-694730-640.jpg",
     "name": "Shadow",
     "age": 1,
     "location": "Chicago, USA",
@@ -30,7 +30,7 @@
     "adopted": "false"
   },
   {
-    "image": "cat4.jpg",
+    "image": "https://i.ibb.co/tCZWrHT/cat-2083492-640.jpg",
     "name": "Luna",
     "age": 4,
     "location": "Miami, USA",
@@ -40,7 +40,7 @@
     "adopted": "false"
   },
   {
-    "image": "dog1.jpg",
+    "image": "https://i.ibb.co/jvm8MRx/d1.jpg",
     "name": "Buddy",
     "age": 2,
     "location": "San Francisco, USA",
@@ -50,7 +50,7 @@
     "adopted": "false"
   },
   {
-    "image": "dog2.jpg",
+    "image": "https://i.ibb.co/cgGZvFP/d2.jpg",
     "name": "Charlie",
     "age": 5,
     "location": "Seattle, USA",
@@ -60,7 +60,7 @@
     "adopted": "false"
   },
   {
-    "image": "dog3.jpg",
+    "image": "https://i.ibb.co/0r0jw7F/d3.jpg",
     "name": "Max",
     "age": 3,
     "location": "Austin, USA",
@@ -70,7 +70,7 @@
     "adopted": "false"
   },
   {
-    "image": "dog4.jpg",
+    "image": "https://i.ibb.co/qRm9LpX/d4.jpg",
     "name": "Daisy",
     "age": 1,
     "location": "Denver, USA",
@@ -80,7 +80,7 @@
     "adopted": "false"
   },
   {
-    "image": "rabbit1.jpg",
+    "image": "https://i.ibb.co/YTJrVh5/r1.jpg",
     "name": "Cotton",
     "age": 1,
     "location": "Portland, USA",
@@ -90,7 +90,7 @@
     "adopted": "false"
   },
   {
-    "image": "rabbit2.jpg",
+    "image": "https://i.ibb.co/4jfkpBt/r2.jpg",
     "name": "Thumper",
     "age": 2,
     "location": "Boston, USA",
@@ -100,7 +100,7 @@
     "adopted": "false"
   },
   {
-    "image": "rabbit3.jpg",
+    "image": "https://i.ibb.co/nDpks1z/r3.jpg",
     "name": "Snowball",
     "age": 1,
     "location": "Atlanta, USA",
@@ -110,7 +110,7 @@
     "adopted": "false"
   },
   {
-    "image": "rabbit4.jpg",
+    "image": "https://i.ibb.co/Sx1Lfwr/r4.jpg",
     "name": "Bunny",
     "age": 3,
     "location": "Dallas, USA",
@@ -120,7 +120,7 @@
     "adopted": "false"
   },
   {
-    "image": "fish1.jpg",
+    "image": "https://i.ibb.co/R3V9mHq/discus-fish-1943755-640.jpg",
     "name": "Finny",
     "age": 1,
     "location": "Houston, USA",
@@ -130,7 +130,7 @@
     "adopted": "false"
   },
   {
-    "image": "fish2.jpg",
+    "image": "https://i.ibb.co/RBCTGTC/fish-5917864-640.jpg",
     "name": "Bubbles",
     "age": 2,
     "location": "Phoenix, USA",
@@ -140,7 +140,7 @@
     "adopted": "false"
   },
   {
-    "image": "fish3.jpg",
+    "image": "https://i.ibb.co/LQJ8t52/fishes-7314666-640.jpg",
     "name": "Splash",
     "age": 1,
     "location": "Las Vegas, USA",
@@ -150,7 +150,7 @@
     "adopted": "false"
   },
   {
-    "image": "fish4.jpg",
+    "image": "https://i.ibb.co/qkhZySK/fish-6368233-640.jpg",
     "name": "Finnegan",
     "age": 3,
     "location": "Orlando, USA",

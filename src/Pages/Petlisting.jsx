@@ -5,7 +5,7 @@ const Petlisting = () => {
   const [petsInfo, setPetsInfo] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/pets")
+    fetch("https://y-nine-sigma.vercel.app/pets")
       .then((res) => res.json())
       .then((data) => setPetsInfo(data));
   }, []);
